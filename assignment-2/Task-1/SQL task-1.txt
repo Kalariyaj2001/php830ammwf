@@ -1,0 +1,65 @@
+											SQL assingment answer TASK-1
+
+Q1.create table employee 
+
+(
+ empid int AUTO_INCREMENT primary key,
+ firstname varchar(255),
+ lastname varchar(255),
+ salary float,
+ joining_date varchar(255),
+ department varchar(255)
+)
+
+Q.2 INSERT INTO `employee` (`empid`, `firstname`, `lastname`, `salary`, `joining_date`, `department`) VALUES (NULL, 'kripal', 'patel', '2500', '25/06/2015', 'it');
+INSERT INTO `employee` (`empid`, `firstname`, `lastname`, `salary`, `joining_date`, `department`) VALUES (NULL, 'parth', 'patel', '3000', '30/06/2015', 'computer');
+INSERT INTO `employee` (`empid`, `firstname`, `lastname`, `salary`, `joining_date`, `department`) VALUES (NULL, 'dhruv', 'patel', '4000', '01/07/2015', 'civil');
+INSERT INTO `employee` (`empid`, `firstname`, `lastname`, `salary`, `joining_date`, `department`) VALUES (NULL, 'brijesh', 'patel', '5000', '15/07/2015', 'it');
+
+
+
+Q3. create table incentives 
+
+(
+ incentiveid int AUTO_INCREMENT primary key,
+ empid int REFERENCES employee(empid),
+ incentivedate varchar(255),
+ incentive_ammount float
+)
+
+Q4.INSERT into incentives VALUES ('null','1','20/08/2022',1200),('null','2','15/09/2022',1850)
+('null','2','2015-02-01','4000'),
+('null','2','2015-03-01','4050'),
+('null','2','2015-04-01','5000'),
+('null','2','2015-05-01','6000')
+
+Q5. select first_name as employee_name from employee;
+
+Q-6. select first_name,joining_date from employee;
+
+Q-7. SELECT* from employee ORDER BY first_nameASC,salary DESC;
+
+Q-8, select *from employee where first_name like'%0%';
+
+Q-9.select* from empolyee where joining_date='2015-01-01';
+
+Q-10. select sum(salary),department from employee GROUP BY department ORDER BY sum(salary)DESC;
+
+Q-11. select max(salary),department from employee GROUP BY department ORDER BY max(salary)ASC;
+
+Q-12. select first_name,incentive_amt    from    employee    join  incentives  on  employee.emp_id=incentives.emp_id where incentive_amt>3000;
+
+Q-13. select max(salary) from employee where salary < (select max(salary)from employee);
+
+Q-14. select first_name,incentive_amt    from    incentive_amt  from    incentives  left  join  employee  on   incentives.emp_id=employee.emp_id;
+
+Q-15. select first_name,last_name,salary from employee;
+
+Q-16. select department,max(salary)from employee GROUP BY department;
+
+
+
+
+
+
+
