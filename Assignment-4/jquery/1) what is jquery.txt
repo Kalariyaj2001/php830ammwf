@@ -1,0 +1,51 @@
+								Jquery Assignment
+
+
+1) What is jquery.
+
+-> jquery is used to client side scripting language.
+
+-> jquery is used to load user broswer.
+
+-> jquery called in head or body both section.
+
+-> jquery is a used also as a programming language.
+
+-> jquery is a library function of javascript.
+
+-> jquery is case senstive client side language.
+
+-> jquery used some inbuild events to load jquery in browser
+
+		a) click |dbclick ,hover
+
+-> jquery used some output method that are ;
+ 
+         1) alert()
+		2) conform()
+		3) prompt()
+		4) document.write()
+		5) document.getElementById()
+         6) document.getElementById().value;
+         7) document.getElementById().innerHTML;
+         8) document.getElementById().style;
+         9) console.log();
+         10) window.print() 
+
+-> jquery is used to validate any form or form validations.
+
+-> jquery provides a more effects.
+
+		1) hide()
+		2) show
+		3) toggle
+
+-> jquery is used to call by its CDN
+ 
+		1)offline CDN
+		2) online CDN
+
+ofline CDN : cdn stands for content delivey network if we download amd used this called offline cdn
+
+EX. 
+	<script src=""></script>
